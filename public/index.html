@@ -2,44 +2,53 @@
 <html>
 <head>
   <title>Smart Parking</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- PREMIUM GRADIENT BACKGROUND -->
-<div class="orb orb1"></div>
-<div class="orb orb2"></div>
+<div class="grain"></div>
 
-<header class="header">
-  <h1>PARKING CONTROL</h1>
-</header>
+<main class="poster">
+  <section class="headline-panel reveal-up">
+    <p class="kicker">SMART PARKING SYSTEM</p>
+    <h1>Take me to your slot</h1>
+    <p class="intro">
+      Real-time parking intelligence with a cinematic dashboard feel.
+      Sensor updates stream into this board every 2 seconds.
+    </p>
+  </section>
 
-<section class="grid">
+  <section class="stats reveal-up delay-1">
+    <article class="data-card total-card">
+      <p class="label">TOTAL</p>
+      <p id="total" class="value">0</p>
+    </article>
 
-  <div class="card glass">
-    <div class="label">TOTAL</div>
-    <div id="total" class="value">0</div>
-  </div>
+    <article class="data-card occupied-card" id="occupiedCard">
+      <p class="label">OCCUPIED</p>
+      <p id="occupied" class="value">0</p>
+    </article>
 
-  <div class="card glass occupied-card" id="occupiedCard">
-    <div class="label">OCCUPIED</div>
-    <div id="occupied" class="value">0</div>
-  </div>
+    <article class="data-card vacant-card" id="vacantCard">
+      <p class="label">VACANT</p>
+      <p id="vacant" class="value">0</p>
+    </article>
+  </section>
 
-  <div class="card glass vacant-card" id="vacantCard">
-    <div class="label">VACANT</div>
-    <div id="vacant" class="value">0</div>
-  </div>
+  <section class="car-stage reveal-up delay-2">
+    <div id="car-wrap">
+      <img id="car" src="car.png" alt="Sports car illustration">
+    </div>
+  </section>
 
-</section>
-
-<!-- 🚗 LAMBORGHINI -->
-<div id="car-container">
-  <img id="car" src="car.png" />
-</div>
+  <footer class="brand reveal-up delay-3">
+    <p>LIVE GRID</p>
+    <h2>SMART PARKING</h2>
+  </footer>
+</main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="script.js"></script>
