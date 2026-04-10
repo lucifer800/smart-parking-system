@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0f;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 🌌 ORBS */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: -1;
+}
+
+.orb1 {
+  width: 500px;
+  height: 500px;
+  background: #001aff;
+  top: 10%;
+  left: 10%;
+}
+
+.orb2 {
+  width: 500px;
+  height: 500px;
+  background: #00ffd5;
+  bottom: 10%;
+  right: 10%;
+}
+
+/* HEADER */
+.header {
+  padding: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+/* GLASS */
+.glass {
+  backdrop-filter: blur(16px);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 18px;
+  padding: 35px;
+  width: 220px;
+}
+
+/* VALUE */
+.value {
+  font-size: 50px;
+}
+
+/* GLOW */
+.occupied-card.active {
+  box-shadow: 0 0 40px red;
+}
+
+.vacant-card.active {
+  box-shadow: 0 0 40px #00ff99;
+}
+
+/* 🚗 CAR */
+#car-container {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#car {
+  width: 180px;
+  filter: 
+    drop-shadow(0 25px 40px rgba(0,0,0,0.6))
+    brightness(0.9);
+}
